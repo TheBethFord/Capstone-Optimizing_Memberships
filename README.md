@@ -6,7 +6,9 @@ If you want to contact me you can reach me at contactbethford@gmail.com
 
   
 ## Overview
-* Analysis and Modeling designed to optimize fundraising operations, especially as total gifts decline yearly. ![Picture of gifts by year.](/images/GiftsByYear.png) So we are looking to understand the following questions:
+* Analysis and Modeling designed to optimize fundraising operations, especially as total gifts decline yearly. ![Picture of gifts by year.](/images/GiftsByYear.png) 
+
+So we are looking to understand the following questions:
 
 1. Who Donors Are, create personaes for marketing using K Means Cluster
 2. How to Identify Top Donors, using Logistic Regression
@@ -29,11 +31,17 @@ One file was created, joining the three seperate files. Fundraising data was the
 ## Modeling
 - KMeans model to create personae clusters to use for marketing ![Picture of elbow curve at 19.](/images/Elbow.png)
 - Regression model with Grid Search and cross validation to identify target of top donors
-- Classification models (Logistic Regression, RandomForestClassifier, SVM, KNN). After running through four models, RandomForestClassifier came out as the strongest model.  In order to optimize that model, I ran a gridsearch of 243 fits to find the best parameters, resulting in a maximum depth of 30 with 200 trees being built by n_estimators=200.  The mean CV score of these tree was 43%
+- Classification models (Logistic Regression, RandomForestClassifier, SVM, KNN). After running through four models, RandomForestClassifier came out as the strongest model.  In order to optimize that model, I ran a gridsearch of 243 fits to find the best parameters, resulting in a maximum depth of 30 with 200 trees being built by n_estimators=200.  The mean CV score of these tree was 43% ![Picture of random forest.](/images/RandomForest.png)
 
 
-## Overall Findings
-- Optimal Elbow reached all the way to 20 different clusters. To make the clusters more usable for the business, I may consider creating new fields upon which to cluster in order to try and decrease the total personaes.
+## Overall Findings and Recommendations
+- Optimal Elbow reached all the way to 20 different clusters. To make the clusters more usable for the business, I may consider creating new fields upon which to cluster in order to try and decrease the total personaes more usable for marketing. 
+- I do not think that the Logistic Regression drove enough insight nor did it produce a very high F1 score.  Due to this, I would use heurisic measurements to identify top donors and it is also easier to explain to clients when you identify giving above the mean.
+- Use the best model from the RandomForestClassifer to predict when new donors come into the database, is there a preferred solicitor to optimize their giving. 
+- The strongest predictions came with Lurleen Gownge, Kipp Anespie, Brnba Donaghy, Reggie Egginson and Rodd Hanretty
+- Overall the features that were most important to successful placement were monetary features, however the assigmnet units of DXO and the Law School were the most omportant categorical features/ 
+
+
 
 
 
