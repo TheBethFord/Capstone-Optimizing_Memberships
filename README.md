@@ -6,7 +6,8 @@ If you want to contact me you can reach me at contactbethford@gmail.com
 
   
 ## Overview
-* Analysis and Modeling designed to optimize fundraising operations, especially as total gifts decline yearly. ![Picture of gifts by year.](/images/GiftsByYear.png)
+* Analysis and Modeling designed to optimize fundraising operations, especially as total gifts decline yearly. ![Picture of gifts by year.](/images/GiftsByYear.png) So we are looking to understand the following questions:
+
 1. Who Donors Are, create personaes for marketing using K Means Cluster
 2. How to Identify Top Donors, using Logistic Regression
 3. How to Assign the Right Solicitor to Make Donors Successful, using a RandomForestClassifier
@@ -23,7 +24,7 @@ Data was taken from a competition proposal run by APRA American Prospect Researc
 
 
 ## Data Exploration and Feature Engineering
-
+One file was created, joining the three seperate files. Fundraising data was then aggregated by infidual in order to see totals and means of financial activities. Additonal columsn like year and month.  Trending data was added by looking to see who increased their gift YoY. A success factor was added calculated by adding both flags to see if they were a top donor as well as trending up.  This factor was appended to solicitors in order to make the target classification variables of successful solicitors.
 
 ## Modeling
 - KMeans model to create personae clusters to use for marketing ![Picture of elbow curve at 19.](/images/Elbow.png)
