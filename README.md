@@ -36,16 +36,8 @@ One file was created, joining the three seperate files. Fundraising data was the
 
 ## Overall Findings and Recommendations
 - Optimal Elbow reached all the way to 20 different clusters. To make the clusters more usable for the business, I may consider creating new fields upon which to cluster in order to try and decrease the total personaes more usable for marketing. 
+- Look for additonal data sets that included demographic and psycographic information to humanize the personaes.
 - I do not think that the Logistic Regression drove enough insight nor did it produce a very high F1 score.  Due to this, I would use heurisic measurements to identify top donors and it is also easier to explain to clients when you identify giving above the mean.
 - Use the best model from the RandomForestClassifer to predict when new donors come into the database, is there a preferred solicitor to optimize their giving. 
 - The strongest predictions came with Lurleen Gownge, Kipp Anespie, Brnba Donaghy, Reggie Egginson and Rodd Hanretty
-- Overall the features that were most important to successful placement were monetary features, however the assigmnet units of DXO and the Law School were the most omportant categorical features/ 
-
-
-
-
-
-
-
-## Recommendations
-- Create a score and new fields to be more descriptive and not so many correlated fields.
+- Overall the features that were most important to successful placement were monetary features, however the assigmnet units of DXO and the Law School were the most omportant categorical features.
