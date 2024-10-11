@@ -6,7 +6,7 @@ If you want to contact me you can reach me at contactbethford@gmail.com
 
   
 ## Overview
-* Analysis and Modeling designed to optimize fundraising operations
+* Analysis and Modeling designed to optimize fundraising operations, especially as total gifts are celining each year. ![Picture of gifts by year.](/images/GiftsByYear.png)
 1. Who Donors Are, create personaes for marketing using K Means Cluster
 2. How to Identify Top Donors, using Logistic Regression
 3. How to Assign the Right Solicitor to Make Donors Successful, using a RandomForestClassifier
